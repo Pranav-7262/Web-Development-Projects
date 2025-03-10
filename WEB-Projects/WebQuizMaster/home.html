@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebQuizMaster - Home Webpage</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <style>
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            position: relative;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #4CAF50;
+            padding: 10px;
+            border-radius: 5px;
+            top: 100%;
+            left: 0;
+            width: 150px;
+        }
+        .dropdown li {
+            display: none;
+            margin: 5px 0;
+        }
+        .dropdown li a {
+            color: white;
+            display: block;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .dropdown li a:hover {
+            background-color: #45a049;
+        }
+        .nav-links li:hover .dropdown {
+            display: block;
+        }
+        .dropdown:hover li {
+            display: block;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a href="index.html">
+                    <img src="main2,png.png" alt="WebQuizMaster Logo">
+                </a>
+                WebQuizMaster
+            </div>
+            <div class="right">
+                <ul class="nav-links">
+                    <li><a href="indexabout.html">About</a></li>
+                    <li>
+                        <a href="#">Learn ▼</a>
+                        <ul class="dropdown">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Visit <span class="purple">WebQuizMaster</span>
+                <div>to make learning engaging with</div>
+                <span id="element"></span>
+                <div class="btn">
+                    <button id="create">Get Started &gt;</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="main2,png.png"">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.getElementById("create").addEventListener("click",() => {
+            window.location.href = "main2.html";
+        });
+
+
+        var typed = new Typed('#element', {
+            strings: ['Interactive Challenges!', 'Exciting Quizzes!', 'Curiosity Boosters!'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>

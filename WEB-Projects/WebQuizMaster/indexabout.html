@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WebQuizMaster</title>
+    <link rel="stylesheet" href="styleabout.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo and Title -->
+        <div class="header">
+            <img src="main2,png.png" alt="WebDev Logo" class="logo">
+            <h1>About WebQuizMaster</h1>
+        </div>
+
+        <!-- About Description -->
+        <p class="description">
+            WebQuizMaster is an interactive quiz platform designed to test and improve users' knowledge of various 
+            web development topics, including HTML, CSS, and JavaScript. The platform provides a fun and engaging way 
+            to assess and enhance your skills through multiple quizzes with a time-based challenge.
+        </p>
+
+        <!-- Quiz Categories -->
+        <div class="quiz-section">
+            <h2>Quiz Categories</h2>
+            <ul class="quiz-list">
+                <li><strong>HTML Quiz:</strong> 10 MCQs (15 seconds per question)</li>
+                <li><strong>CSS Quiz:</strong> 10 MCQs (15 seconds per question)</li>
+                <li><strong>JavaScript Quiz:</strong> 10 MCQs (15 seconds per question)</li>
+                <li><strong>Web Development Quiz:</strong> A combined quiz covering HTML, CSS, and JavaScript with a total duration of 10 minutes</li>
+            </ul>
+        </div>
+
+        <!-- Quiz Rules -->
+        <div class="rules-section">
+            <h2>Rules & Guidelines</h2>
+            <ul class="rules-list">
+                <li><strong>Time Limit:</strong> Each question in the HTML, CSS, and JavaScript quizzes must be answered within 15 seconds. The Web Development quiz has a total time limit of 10 minutes.</li>
+                <li><strong>Scoring System:</strong> Correct answers earn points, while incorrect or skipped questions do not.</li>
+                <li><strong>No Backtracking:</strong> Once a question is answered or time runs out, you cannot go back to change your answer.</li>
+                <li><strong>Single Attempt per Question:</strong> Choose your answer wisely! You cannot modify your response once submitted.</li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <button class="back-button" onclick="goBack()">⬅ Back</button>
+        </div>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    </div>
+</body>
+</html>
